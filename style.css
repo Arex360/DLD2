@@ -45,6 +45,7 @@ button{
 }
 button:hover{
     background: blueviolet;
+    padding: 100px;
 }
 .canvas{
     position: absolute;

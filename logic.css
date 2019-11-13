@@ -45,6 +45,20 @@ body{
     cursor: pointer;
     position: absolute;
 }
+#input4{
+    position: absolute;
+    background: cyan;
+    padding: 20px;
+    width: 10px;
+    height: 10px;
+    top: 35%;
+    text-align: center;
+    left: 330px;
+    color: white;
+}
+#input4:hover{
+    background: red;
+}
 #s1{
     position: fixed;
    
@@ -62,4 +76,17 @@ body{
     position: fixed;
     left:900px;
     top: 400px;
+}
+.backbtn{
+    position: absolute;
+    background: url('btn2.png') no-repeat;
+    width: 130px;
+    height: 130px;
+    top: 670px;
+    left: 5%;
+}
+.backbtn:hover{
+    position: absolute;
+    background: url('btn2hover.png') no-repeat;
+   
 }

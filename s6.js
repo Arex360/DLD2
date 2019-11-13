@@ -1,3 +1,11 @@
+var style1 = document.getElementById("input1").style
+var style2 = document.getElementById("input2").style
+style1.position = style2.position = "fixed"
+style1.left = "120px"
+style1.top = "200px" 
+style2.top = "280px"
+style2.left = "120px"
+
 var i1 = document.querySelector("#input1")
 var i2 = document.querySelector("#input2")
 var bulb = document.querySelector("#bulb")
@@ -27,27 +35,16 @@ i2.addEventListener("click",function(){
     if(B == false){
         document.getElementById("input2").innerHTML = "1"
         B = true
-        sw = 1
     }
     else{
        document.getElementById("input2").innerHTML = "0"
        B = false
-       sw = 0
     }  
 })
-var result = function(){
-
-}
-i = 1
-
-out.addEventListener("click",()=>{
-    output = A || (A && B)
+out.addEventListener('click',function(){
+    output = !((A && (!B)) + (!A && B))
+    if(output)
+    bulb.src = "on.png"
+    else
+    bulb.src = "off.png"
 })
-setInterval(function(){
-    if(output == true){
-        bulb.src = "on.png"
-    }
-    else if(output == false){
-        bulb.src = "off.png"
-    }
-},1000)

@@ -13,7 +13,7 @@ app.on('ready',() =>{
         frame: false
     })
     win.loadURL(url.format({
-        pathname: path.join(__dirname,'s3.html'),
+        pathname: path.join(__dirname,'app.html'),
         slashes: true
     }))
 })
